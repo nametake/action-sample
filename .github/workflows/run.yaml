@@ -4,5 +4,9 @@ jobs:
   hello_world_job:
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
       - uses: nametake/go-zetasqlfmt-action@v1
+        with:
+          dir: ./dir/...
       - run: git diff HEAD main
