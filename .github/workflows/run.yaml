@@ -9,4 +9,4 @@ jobs:
       - uses: nametake/go-zetasqlfmt-action@v1
         with:
           dir: ./dir/...
-      - run: git diff HEAD main
+      - run: git diff
