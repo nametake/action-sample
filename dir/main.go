@@ -10,3 +10,10 @@ func Foo() *spanner.Statement {
 		Params: map[string]interface{}{},
 	}
 }
+
+func Bar() *spanner.Statement {
+	return &spanner.Statement{
+		SQL:    "SELECT * FROM TABLE WHERE 1=1;",
+		Params: map[string]interface{}{},
+	}
+}

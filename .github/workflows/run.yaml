@@ -5,4 +5,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: nametake/go-zetasqlfmt-action@v1
-      - run: git diff
+      - run: git diff main
